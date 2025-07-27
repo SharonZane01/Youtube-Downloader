@@ -46,7 +46,7 @@ This project was created to demonstrate several key concepts in Python applicati
     ```bash
     pip install -r requirements.txt
     ```
-    *(You will need to create a `requirements.txt` file. See below.)*
+   
 
 4.  **Run the application:**
     ```bash
