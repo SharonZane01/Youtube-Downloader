@@ -95,16 +95,13 @@ PyDownloader/
 ```
 
 
-###
----
-If you got any error or frustated use this gdrive link for direct exe download -
-https://drive.google.com/file/d/1WNIgFkGhNDrDrLURc3ACsI2sC-puLgtU/view?usp=sharing.
+If you got any error or frustrated use this gdrive link for direct exe download -  
+https://drive.google.com/file/d/1WNIgFkGhNDrDrLURc3ACsI2sC-puLgtU/view?usp=sharing.  
 
-1.Download and extract the "pydownloader.zip"
-2.Inside There will be a Pydownloader.exe
-3.Run as administator , If got any errors.    this is not properly aligned after readme github.
+1. Download and extract the "pydownloader.zip"  
+2. Inside There will be a Pydownloader.exe  
+3. Run as administrator, If got any errors.
 
-###
 
 ## 🎯 Usage
 
@@ -201,3 +198,4 @@ This project is for educational purposes. Respect YouTube's Terms of Service and
 **Developed with ❤️ by Zane**
 
 *For the latest updates and support, visit the GitHub repository.*
+
