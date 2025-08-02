@@ -1,189 +1,191 @@
-<<<<<<< HEAD
-# Py Downloader - A YouTube Video Downloader
+# 🚀 PyDownloader Pro - Setup Instructions
 
-A simple but powerful desktop application for downloading YouTube videos and audio, built with Python, CustomTkinter, and yt-dlp.
+A beautiful, modern YouTube downloader with a stunning UI built with CustomTkinter.
 
-## Features ✨
+## ✨ New Features
 
-* **Modern UI:** Clean and responsive user interface built with CustomTkinter.
-* **Multiple Download Options:**
-    * Download high-quality video up to 1080p and beyond.
-    * Automatically merges separate video and audio streams for the best quality.
-    * Download lower-resolution videos with audio included (progressive).
-    * Dedicated option to download and convert audio to MP3.
-* **High-Speed Downloads:** Automatically uses `aria2c` if installed on the system for significantly faster, multi-threaded downloads.
-* **Cross-Platform:** Works on Windows, macOS, and Linux.
+- **Modern Glass-Morphism UI** with smooth animations and hover effects
+- **Real-time Progress Tracking** with download speed indicators
+- **Smart Format Detection** with categorized download options
+- **Built-in Update Checker** to keep your app current
+- **Bundled FFmpeg & aria2c** for seamless video processing
+- **Multi-threaded Downloads** for better performance
+- **Beautiful Cards Layout** for download options
+- **Error Handling** with user-friendly messages
 
-## For Educational Purposes
+## 🛠️ Setup Instructions
 
-This project was created to demonstrate several key concepts in Python application development:
-* Creating a GUI with CustomTkinter.
-* Using `yt-dlp` to interface with web services.
-* Handling long-running tasks in a separate thread to keep the UI from freezing.
-* Interacting with external command-line tools like `FFmpeg` and `aria2a`.
-* Packaging a Python script into a standalone executable with PyInstaller.
+### Step 1: Install Python
+Make sure you have Python 3.8+ installed on your system.
+- Download from: https://python.org/downloads/
 
-## Requirements 📋
+### Step 2: Project Setup
+1. Save the main script as `pydownloader.py`
+2. Save the requirements file as `requirements.txt`
+3. Save the build script as `build.py`
+4. Save the spec file as `pydownloader.spec`
 
-* Python 3.8+
-* FFmpeg (must be installed and available in the system's PATH)
-* aria2c (optional, for faster downloads)
+### Step 3: Automatic Setup & Build
+Run the build script to automatically set everything up:
 
-## Setup and Installation 🚀
+```bash
+python build.py
+```
 
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/SharonZane01/PyDownloader.git](https://github.com/SharonZane01/PyDownloader.git)
-    cd PyDownloader
-    ```
+This script will:
+- ✅ Create the `assets` folder
+- ✅ Download FFmpeg and aria2c binaries
+- ✅ Install all required Python packages
+- ✅ Build the standalone executable
 
-2.  **Create a virtual environment:**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-    ```
+### Step 4: Manual Setup (Alternative)
 
-3.  **Install the required Python libraries:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-   
+If the automatic setup doesn't work, follow these manual steps:
 
-4.  **Run the application:**
-    ```bash
-    python app.py
-    ```
-
-## Creating a `requirements.txt` File
-
-To make it easy for others to install the dependencies, create a file named `requirements.txt` in your project folder with the following content:
-=======
-Of course. Based on your project structure, here is a comprehensive, professional README file.
-
-You can copy and paste this directly into your README.md file.
-
-Py Downloader Pro 🚀
-
-A sleek and modern desktop application for downloading videos and audio from YouTube and other supported websites. Built with Python, customtkinter, and powered by the robust yt-dlp library.
-
-(Note: You should replace the link above with a real screenshot of your app.)
-
-✨ Features
-
-    Modern & Intuitive UI: A beautiful, clean interface built with customtkinter, featuring custom widgets and a dark/light theme.
-
-    Download Video & Audio: Easily download videos or extract audio from any yt-dlp supported URL.
-
-    Multiple Format Options: Choose from various video resolutions and audio quality formats before downloading.
-
-    Real-time Progress: A visual progress bar and status updates keep you informed during the download.
-
-    High-Speed Downloads: Optional integration with aria2c for accelerated, multi-threaded downloads.
-
-    Standalone Executable: No need for users to install Python or any dependencies. Just download and run!
-
-    Cross-Platform: Packaged to run on Windows, with potential for macOS and Linux builds.
-
-🚀 Getting Started
-
-There are two ways to use this application: as a pre-built executable or by running the source code directly.
-
-1. For End-Users (Recommended)
-
-    Go to the Releases page of this repository.
-
-    Download the latest Py-Downloader-Pro-vX.X.zip file.
-
-    Unzip the downloaded file.
-
-    Double-click pydownloader.exe to run the application!
-
-2. For Developers (Running from Source)
-
-If you want to run the application from the source code to modify or test it, follow these steps.
-
-    Clone the repository:
-    Bash
-
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-cd DESKTOP-YT-APP
-
-Create and activate a virtual environment:
-Bash
-
-# For Windows
-python -m venv venv
-.\venv\Scripts\activate
-
-Install the required dependencies:
-Bash
-
+#### Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
-Run the application:
-Bash
+#### Create Assets Folder
+Create an `assets` folder in your project directory and add:
 
-    python pydownloader.py
+**For Windows:**
+- `ffmpeg.exe` - Download from https://ffmpeg.org/download.html
+- `aria2c.exe` - Download from https://aria2.github.io/
 
-🛠️ Building the Executable
+**For macOS:**
+```bash
+brew install ffmpeg aria2
+cp $(which ffmpeg) assets/ffmpeg
+cp $(which aria2c) assets/aria2c
+```
 
-This project uses PyInstaller to package the Python script and all its assets into a single standalone executable.
+**For Linux:**
+```bash
+sudo apt install ffmpeg aria2  # Ubuntu/Debian
+# or
+sudo pacman -S ffmpeg aria2    # Arch Linux
 
-    Make sure you have completed the developer setup steps above.
+cp $(which ffmpeg) assets/ffmpeg
+cp $(which aria2c) assets/aria2c
+```
 
-    Install PyInstaller:
-    Bash
+#### Build Executable
+```bash
+pyinstaller --clean pydownloader.spec
+```
 
-pip install pyinstaller
+## 📁 Project Structure
+```
+PyDownloader/
+├── pydownloader.py          # Main application
+├── requirements.txt         # Python dependencies
+├── pydownloader.spec       # PyInstaller configuration
+├── build.py                # Automated build script
+├── assets/                 # Binary assets
+│   ├── ffmpeg.exe         # Video processing (Windows)
+│   ├── ffmpeg             # Video processing (macOS/Linux)
+│   ├── aria2c.exe         # Fast downloads (Windows)
+│   ├── aria2c             # Fast downloads (macOS/Linux)
+│   └── icon.ico           # App icon (optional)
+└── dist/                  # Built executable (after build)
+    └── PyDownloader/
+        └── PyDownloader.exe
+```
 
-Run the build command from the root directory. The included .spec file is pre-configured for you.
-Bash
+## 🎯 Usage
 
-    pyinstaller pydownloader.spec
+### Running from Source
+```bash
+python pydownloader.py
+```
 
-    Alternatively, you can use the build.py script if it's configured to do the same.
+### Running Standalone Executable
+Navigate to `dist/PyDownloader/` and run `PyDownloader.exe` (Windows) or `PyDownloader` (macOS/Linux).
 
-    The final executable and its associated files will be located in the dist/pydownloader directory.
+### How to Use
+1. **Enter URL**: Paste a YouTube URL in the input field
+2. **Analyze**: Click "🔍 Analyze" to fetch video information
+3. **Choose Format**: Select from available download options:
+   - 🎵 **Audio Only**: Extract audio in high quality
+   - 📹 **Direct Download**: Video with built-in audio
+   - 🎬 **High Quality**: Best quality video (requires merge)
+4. **Download**: Choose save location and start download
+5. **Monitor**: Watch real-time progress with speed indicators
 
-📂 Project Structure
+## 🔧 Troubleshooting
 
-Here's an overview of the key files and directories in this project:
+### Common Issues
 
-DESKTOP-YT-APP/
-│
-├── assets/              # Static assets like icons, ffmpeg.exe, aria2c.exe
-├── dist/                # Output directory for the compiled executable
-├── build/               # Build-related files generated by PyInstaller
-│
-├── pydownloader.py      # Main application script
-├── pydownloader.spec    # PyInstaller specification file for building the exe
-├── requirements.txt     # List of Python dependencies for pip
-├── setup.bat            # (Optional) Batch script for easy setup
-└── README.md            # This file
+**1. "Module not found" errors**
+```bash
+pip install --upgrade customtkinter yt-dlp pillow
+```
 
-🤝 Contributing
+**2. FFmpeg not found**
+- Ensure `ffmpeg.exe` (Windows) or `ffmpeg` (macOS/Linux) is in the `assets` folder
+- Make sure the file has execute permissions on macOS/Linux: `chmod +x assets/ffmpeg`
 
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+**3. Download fails**
+- Check your internet connection
+- Verify the YouTube URL is valid
+- Some videos may be geo-restricted or have download limitations
 
-    Fork the Project.
+**4. Build fails on macOS/Linux**
+```bash
+# Install required system packages
+sudo apt install python3-tk python3-dev  # Ubuntu/Debian
+brew install python-tk                    # macOS
+```
 
-    Create your Feature Branch (git checkout -b feature/AmazingFeature).
+### Performance Tips
 
-    Commit your Changes (git commit -m 'Add some AmazingFeature').
+1. **Use aria2c**: The app automatically uses aria2c for faster downloads when available
+2. **Choose appropriate quality**: Higher quality = larger files and longer download times
+3. **Close other applications**: For better performance during downloads
+4. **Stable internet**: Ensure stable connection for large downloads
 
-    Push to the Branch (git push origin feature/AmazingFeature).
+## 🎨 Customization
 
-    Open a Pull Request.
+The app features a modern dark theme by default. You can customize:
 
-📜 License
+- **Colors**: Modify the color schemes in the `ModernCard` and `GradientFrame` classes
+- **Fonts**: Adjust font sizes and weights in the UI components
+- **Layout**: Modify the grid layouts and padding values
+- **Icons**: Add custom emojis or replace with icon fonts
 
-This project is distributed under the MIT License. See LICENSE for more information.
+## 📋 Requirements
 
-🙏 Acknowledgements
+- **Python**: 3.8 or higher
+- **Operating System**: Windows 10+, macOS 10.14+, or Linux
+- **RAM**: 4GB minimum (8GB recommended)
+- **Storage**: 500MB for app + space for downloads
+- **Internet**: Required for downloading videos
 
-    CustomTkinter for the amazing modern UI toolkit.
+## 🔄 Updates
 
-    yt-dlp for the powerful download engine.
+The app includes a built-in update checker. Click "🔄 Check for Updates" to verify you have the latest version.
 
-    PyInstaller for packaging the application.
->>>>>>> 32095e8 (First commit)
+## 🐛 Reporting Issues
+
+If you encounter any problems:
+
+1. Check the troubleshooting section above
+2. Verify all dependencies are installed correctly
+3. Ensure FFmpeg and aria2c are properly placed in the assets folder
+4. Report issues on the GitHub repository with:
+   - Your operating system
+   - Python version
+   - Full error message
+   - Steps to reproduce
+
+## 📄 License
+
+This project is for educational purposes. Respect YouTube's Terms of Service and copyright laws when downloading content.
+
+---
+
+**Developed with ❤️ by Zane**
+
+*For the latest updates and support, visit the GitHub repository.*
