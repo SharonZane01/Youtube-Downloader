@@ -1,197 +1,203 @@
-<p align="center">
-<img src="https://raw.githubusercontent.com/zane-77/Pydownloader/main/assets/icon.ico" alt="Logo" width="100">
-</p>
+# 🚀 PyDownloader Pro - Setup Instructions
 
-<h1 align="center">🚀 PyDownloader Pro</h1>
-
-<p align="center">
 A beautiful, modern YouTube downloader with a stunning UI built with CustomTkinter.
-</p>
 
-<p align="center">
-<img alt="Python Version" src="https://img.shields.io/badge/python-3.8+-blue?style=for-the-badge&logo=python">
-<img alt="Platforms" src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey?style=for-the-badge">
-<img alt="License" src="https://img.shields.io/badge/license-Educational-orange?style=for-the-badge">
-<img alt="Maintained" src="https://img.shields.io/badge/maintained%3F-yes-green.svg?style=for-the-badge">
-</p>
+## ✨ New Features
 
-<p align="center">
-<!-- IMPORTANT: Replace this with a screenshot or GIF of your application! -->
-<img src="https://user-images.githubusercontent.com/88899559/234850777-1c944a3a-866d-4013-8b74-325d9c394c8e.png" alt="PyDownloader Pro Screenshot" width="750"/>
-</p>
-✨ Core Features
+- **Modern Glass-Morphism UI** with smooth animations and hover effects
+- **Real-time Progress Tracking** with download speed indicators
+- **Smart Format Detection** with categorized download options
+- **Built-in Update Checker** to keep your app current
+- **Bundled FFmpeg & aria2c** for seamless video processing
+- **Multi-threaded Downloads** for better performance
+- **Beautiful Cards Layout** for download options
+- **Error Handling** with user-friendly messages
 
-    🎨 Modern Glass-Morphism UI: A beautiful and intuitive interface with smooth animations.
+## 🛠️ Setup Instructions
 
-    ⚡ Real-time Progress: Track downloads with speed, percentage, and size indicators.
+### Step 1: Install Python
+Make sure you have Python 3.8+ installed on your system.
+- Download from: https://python.org/downloads/
 
-    🧠 Smart Format Detection: Automatically categorizes download options (Audio, Direct, High Quality).
+### Step 2: Project Setup
+1. Save the main script as `pydownloader.py`
+2. Save the requirements file as `requirements.txt`
+3. Save the build script as `build.py`
+4. Save the spec file as `pydownloader.spec`
 
-    🔄 Built-in Update Checker: Stay current with the latest version notifications.
+### Step 3: Automatic Setup & Build
+Run the build script to automatically set everything up:
 
-    🧩 Bundled Binaries: Comes with FFmpeg & aria2c for a seamless, out-of-the-box experience.
+```bash
+python build.py
+```
 
-    🚀 Multi-threaded Downloads: Utilizes aria2c for maximum download speed.
+This script will:
+- ✅ Create the `assets` folder
+- ✅ Download FFmpeg and aria2c binaries
+- ✅ Install all required Python packages
+- ✅ Build the standalone executable
 
-    🖼️ Beautiful Cards Layout: Presents download options in a clean, organized way.
+### Step 4: Manual Setup (Alternative)
 
-    ⚠️ User-Friendly Error Handling: Clear messages to guide you through any issues.
+If the automatic setup doesn't work, follow these manual steps:
 
-😫 Frustrated? Get the Pre-Built App
-
-    If you don't want to set up the project manually, you can download the ready-to-use executable directly from Google Drive.
-    📥 Download PyDownloader.zip
-
-        Download and extract the pydownloader.zip file.
-
-        Inside the extracted folder, find and run Pydownloader.exe.
-
-        If you encounter any Windows SmartScreen warnings, click "More info" -> "Run anyway".
-
-        If you get errors, try running the .exe file as an administrator.
-
-🛠️ Setup & Build Instructions
-Prerequisites
-
-    Python 3.8+: Make sure it's installed and added to your system's PATH.
-
-        Download from: python.org/downloads
-
-Automatic Setup (Recommended)
-
-This script handles everything for you: it creates folders, downloads binaries, installs packages, and builds the app.
-
-    Clone/Download the Repository:
-    Get all the project files (pydownloader.py, build.py, requirements.txt, pydownloader.spec).
-
-    Run the Build Script:
-    Open your terminal or command prompt in the project directory and run:
-
-    python build.py
-
-    Find Your App:
-    Once the script finishes, your ready-to-use application will be in the dist/PyDownloader folder.
-
-<br>
-
-<details>
-<summary><b>Manual Setup Instructions (Click to Expand)</b></summary>
-
-If the automatic script fails, or if you prefer to set things up manually, follow these steps.
-1. Install Dependencies
-
+#### Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
-2. Create assets Folder
+#### Create Assets Folder
+Create an `assets` folder in your project directory and add:
 
-Create an assets folder in your project directory. Then, add the required binaries for your OS:
+**For Windows:**
+- `ffmpeg.exe` - Download from https://ffmpeg.org/download.html
+- `aria2c.exe` - Download from https://aria2.github.io/
 
-    Windows:
+**For macOS:**
+```bash
+brew install ffmpeg aria2
+cp $(which ffmpeg) assets/ffmpeg
+cp $(which aria2c) assets/aria2c
+```
 
-        ffmpeg.exe - Download from BtbN/FFmpeg-Builds
+**For Linux:**
+```bash
+sudo apt install ffmpeg aria2  # Ubuntu/Debian
+# or
+sudo pacman -S ffmpeg aria2    # Arch Linux
 
-        aria2c.exe - Download from aria2/aria2
+cp $(which ffmpeg) assets/ffmpeg
+cp $(which aria2c) assets/aria2c
+```
 
-    macOS:
-
-    brew install ffmpeg aria2
-    # Copy the binaries into your assets folder
-    cp $(which ffmpeg) assets/ffmpeg
-    cp $(which aria2c) assets/aria2c
-
-    Linux:
-
-    # For Ubuntu/Debian
-    sudo apt-get install ffmpeg aria2
-    # For Arch Linux
-    # sudo pacman -S ffmpeg aria2
-
-    # Copy the binaries into your assets folder
-    cp $(which ffmpeg) assets/ffmpeg
-    cp $(which aria2c) assets/aria2c
-
-3. Build the Executable
-
+#### Build Executable
+```bash
 pyinstaller --clean pydownloader.spec
+```
 
-The final application will be located in the dist/PyDownloader directory.
+## 📁 Project Structure
+```
+PyDownloader/
+├── pydownloader.py          # Main application
+├── requirements.txt         # Python dependencies
+├── pydownloader.spec       # PyInstaller configuration
+├── build.py                # Automated build script
+├── assets/                 # Binary assets
+│   ├── ffmpeg.exe         # Video processing (Windows)
+│   ├── ffmpeg             # Video processing (macOS/Linux)
+│   ├── aria2c.exe         # Fast downloads (Windows)
+│   ├── aria2c             # Fast downloads (macOS/Linux)
+│   └── icon.ico           # App icon (optional)
+└── dist/                  # Built executable (after build)
+    └── PyDownloader/
+        └── PyDownloader.exe
+```
 
-</details>
-🎯 How to Use
 
-    ▶️ Run the App:
+###
+---
+If you got any error or frustated use this gdrive link for direct exe download -
+https://drive.google.com/file/d/1WNIgFkGhNDrDrLURc3ACsI2sC-puLgtU/view?usp=sharing.
 
-        From source: python pydownloader.py
+1.Download and extract the "pydownloader.zip"
+2.Inside There will be a Pydownloader.exe
+3.Run as administator , If got any errors.    this is not properly aligned after readme github.
 
-        From executable: Navigate to dist/PyDownloader and run PyDownloader.exe (or PyDownloader on macOS/Linux).
+###
 
-    🔗 Enter URL: Paste a YouTube URL into the input field.
+## 🎯 Usage
 
-    🔍 Analyze: Click the Analyze button to fetch video details and download options.
+### Running from Source
+```bash
+python pydownloader.py
+```
 
-    ✅ Choose Format: Select your preferred quality from the cards:
+### Running Standalone Executable
+Navigate to `dist/PyDownloader/` and run `PyDownloader.exe` (Windows) or `PyDownloader` (macOS/Linux).
 
-        🎵 Audio Only: High-quality M4A or MP3 audio.
+### How to Use
+1. **Enter URL**: Paste a YouTube URL in the input field
+2. **Analyze**: Click "🔍 Analyze" to fetch video information
+3. **Choose Format**: Select from available download options:
+   - 🎵 **Audio Only**: Extract audio in high quality
+   - 📹 **Direct Download**: Video with built-in audio
+   - 🎬 **High Quality**: Best quality video (requires merge)
+4. **Download**: Choose save location and start download
+5. **Monitor**: Watch real-time progress with speed indicators
 
-        📹 Direct Download: Standard quality video with pre-merged audio.
+## 🔧 Troubleshooting
 
-        🎬 High Quality: Best available video resolution (may require merging audio, which the app does automatically).
+### Common Issues
 
-    💾 Download: Click Download, choose where to save the file, and watch the progress!
-
-<details>
-<summary><b>🔧 Troubleshooting Common Issues (Click to Expand)</b></summary>
-🔴 "Module not found" errors
-
-This means a required Python package is missing. Run the installation command again:
-
+**1. "Module not found" errors**
+```bash
 pip install --upgrade customtkinter yt-dlp pillow
+```
 
-🔴 FFmpeg / aria2c not found
+**2. FFmpeg not found**
+- Ensure `ffmpeg.exe` (Windows) or `ffmpeg` (macOS/Linux) is in the `assets` folder
+- Make sure the file has execute permissions on macOS/Linux: `chmod +x assets/ffmpeg`
 
-    The app looks for these files in the assets folder.
+**3. Download fails**
+- Check your internet connection
+- Verify the YouTube URL is valid
+- Some videos may be geo-restricted or have download limitations
 
-    Ensure ffmpeg.exe & aria2c.exe (Windows) or ffmpeg & aria2c (macOS/Linux) are placed directly inside assets.
+**4. Build fails on macOS/Linux**
+```bash
+# Install required system packages
+sudo apt install python3-tk python3-dev  # Ubuntu/Debian
+brew install python-tk                    # macOS
+```
 
-    On macOS/Linux, you may need to grant execute permissions: chmod +x assets/ffmpeg assets/aria2c.
+### Performance Tips
 
-🔴 Download Fails or Gets Stuck
+1. **Use aria2c**: The app automatically uses aria2c for faster downloads when available
+2. **Choose appropriate quality**: Higher quality = larger files and longer download times
+3. **Close other applications**: For better performance during downloads
+4. **Stable internet**: Ensure stable connection for large downloads
 
-    Check your internet connection.
+## 🎨 Customization
 
-    Verify the YouTube URL is correct and the video is not private or geo-restricted.
+The app features a modern dark theme by default. You can customize:
 
-    Try a different video to see if the issue is specific to one URL.
+- **Colors**: Modify the color schemes in the `ModernCard` and `GradientFrame` classes
+- **Fonts**: Adjust font sizes and weights in the UI components
+- **Layout**: Modify the grid layouts and padding values
+- **Icons**: Add custom emojis or replace with icon fonts
 
-🔴 Build Fails on macOS/Linux
+## 📋 Requirements
 
-You might be missing the Tkinter development libraries for Python.
+- **Python**: 3.8 or higher
+- **Operating System**: Windows 10+, macOS 10.14+, or Linux
+- **RAM**: 4GB minimum (8GB recommended)
+- **Storage**: 500MB for app + space for downloads
+- **Internet**: Required for downloading videos
 
-# Ubuntu/Debian
-sudo apt install python3-tk python3-dev
+## 🔄 Updates
 
-# macOS (Homebrew)
-brew install python-tk
+The app includes a built-in update checker. Click "🔄 Check for Updates" to verify you have the latest version.
 
-</details>
-🐛 Reporting Issues
+## 🐛 Reporting Issues
 
-If you find a bug, please open an issue on the GitHub repository. Include the following information:
+If you encounter any problems:
 
-    Your Operating System (e.g., Windows 11, macOS Sonoma).
+1. Check the troubleshooting section above
+2. Verify all dependencies are installed correctly
+3. Ensure FFmpeg and aria2c are properly placed in the assets folder
+4. Report issues on the GitHub repository with:
+   - Your operating system
+   - Python version
+   - Full error message
+   - Steps to reproduce
 
-    The version of Python you are using.
+## 📄 License
 
-    The full error message from the console.
+This project is for educational purposes. Respect YouTube's Terms of Service and copyright laws when downloading content.
 
-    Steps to reproduce the bug.
+---
 
-📄 License
+**Developed with ❤️ by Zane**
 
-This project is distributed for educational purposes. You are responsible for what you download. Please respect YouTube's Terms of Service and copyright laws.
-
-<br>
-
-<p align="center">
-Developed with ❤️ by <strong>Zane</strong>
-</p>
+*For the latest updates and support, visit the GitHub repository.*
