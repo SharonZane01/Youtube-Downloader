@@ -1,0 +1,15 @@
+# Core dependencies
+customtkinter>=5.2.0
+yt-dlp>=2024.7.25
+Pillow>=10.0.0
+packaging>=23.0
+
+# Additional dependencies for better functionality
+requests>=2.31.0
+urllib3>=2.0.0
+certifi>=2023.7.22
+charset-normalizer>=3.2.0
+idna>=3.4
+
+# For executable building
+pyinstaller>=6.0.0
