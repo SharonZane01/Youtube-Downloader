@@ -1,0 +1,740 @@
+PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> & C:/Users/ADMIN/Downloads/Youtube-Downloader-main/Youtube-Downloader-main/venv/Scripts/Activate.ps1
+(venv) PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> setup.bat
+setup.bat : The term 'setup.bat' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the 
+At line:1 char:1
++ setup.bat
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (setup.bat:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+Suggestion [3,General]: The command setup.bat was not found, but does exist in the current location. Windows PowerShell does not load commands from 
+the current location by default. If you trust this command, instead type: ".\setup.bat". See "get-help about_Command_Precedence" for more details.  
+(venv) PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> \setup.bat
+\setup.bat : The term '\setup.bat' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of 
+At line:1 char:1
++ \setup.bat
++ ~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (\setup.bat:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+Suggestion [3,General]: The command \setup.bat was not found, but does exist in the current location. Windows PowerShell does not load commands from the current location by default. If you trust this command, instead type: ".\\setup.bat". See "get-help about_Command_Precedence" for more details.(venv) PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> .\\setup.bat
+
+====================================
+   PyDownloader Pro Setup
+====================================
+
+Γ£à Python found
+
+≡ƒôª Installing Python dependencies...
+Requirement already satisfied: customtkinter>=5.2.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 2)) (5.2.2)
+Requirement already satisfied: yt-dlp>=2024.7.25 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages 
+(from -r requirements.txt (line 3)) (2025.7.21)
+Requirement already satisfied: Pillow>=10.0.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 4)) (11.3.0)
+Requirement already satisfied: packaging>=23.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 5)) (25.0)
+Requirement already satisfied: requests>=2.31.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 8)) (2.32.4)
+Requirement already satisfied: urllib3>=2.0.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 9)) (2.5.0)
+Requirement already satisfied: certifi>=2023.7.22 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 10)) (2025.8.3)
+Requirement already satisfied: charset-normalizer>=3.2.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 11)) (3.4.3)
+Requirement already satisfied: idna>=3.4 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 12)) (3.10)
+Requirement already satisfied: pyinstaller>=6.0.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 15)) (6.15.0)
+Requirement already satisfied: darkdetect in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from customtkinter>=5.2.0->-r requirements.txt (line 2)) (0.8.0)
+Requirement already satisfied: setuptools>=42.0.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from pyinstaller>=6.0.0->-r requirements.txt (line 15)) (80.9.0)
+Requirement already satisfied: altgraph in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from pyinstaller>=6.0.0->-r requirements.txt (line 15)) (0.17.4)
+Requirement already satisfied: pefile!=2024.8.26,>=2022.5.30 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from pyinstaller>=6.0.0->-r requirements.txt (line 15)) (2023.2.7)
+Requirement already satisfied: pywin32-ctypes>=0.2.1 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from pyinstaller>=6.0.0->-r requirements.txt (line 15)) (0.2.3)
+Requirement already satisfied: pyinstaller-hooks-contrib>=2025.8 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from pyinstaller>=6.0.0->-r requirements.txt (line 15)) (2025.8)
+
+[notice] A new release of pip is available: 24.3.1 -> 25.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+Γ£à Dependencies installed
+
+≡ƒÜÇ Running build script...
+🚀 PyDownloader Build Script
+========================================
+🔧 Setting up assets folder...
+📥 Downloading FFmpeg for Windows...
+Downloading from: https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip
+Progress: 100.0%
+📦 Extracting FFmpeg...
+✅ FFmpeg installed: assets\ffmpeg.exe
+📥 Downloading aria2c for Windows...
+Downloading from: https://github.com/aria2/aria2/releases/download/release-1.37.0/aria2-1.37.0-win-64bit-build1.zip
+Progress: 100.0%
+📦 Extracting aria2c...
+✅ aria2c installed: assets\aria2c.exe
+✅ Successfully set up 2 binary/binaries!
+✅ Assets setup complete!
+📦 Installing Python dependencies...
+Requirement already satisfied: customtkinter>=5.2.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 2)) (5.2.2)
+Requirement already satisfied: yt-dlp>=2024.7.25 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages 
+(from -r requirements.txt (line 3)) (2025.7.21)
+Requirement already satisfied: Pillow>=10.0.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 4)) (11.3.0)
+Requirement already satisfied: packaging>=23.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 5)) (25.0)
+Requirement already satisfied: requests>=2.31.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 8)) (2.32.4)
+Requirement already satisfied: urllib3>=2.0.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 9)) (2.5.0)
+Requirement already satisfied: certifi>=2023.7.22 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 10)) (2025.8.3)
+Requirement already satisfied: charset-normalizer>=3.2.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 11)) (3.4.3)
+Requirement already satisfied: idna>=3.4 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 12)) (3.10)
+Requirement already satisfied: pyinstaller>=6.0.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 15)) (6.15.0)
+Requirement already satisfied: darkdetect in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from customtkinter>=5.2.0->-r requirements.txt (line 2)) (0.8.0)
+Requirement already satisfied: setuptools>=42.0.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from pyinstaller>=6.0.0->-r requirements.txt (line 15)) (80.9.0)
+Requirement already satisfied: altgraph in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from pyinstaller>=6.0.0->-r requirements.txt (line 15)) (0.17.4)
+Requirement already satisfied: pefile!=2024.8.26,>=2022.5.30 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from pyinstaller>=6.0.0->-r requirements.txt (line 15)) (2023.2.7)
+Requirement already satisfied: pywin32-ctypes>=0.2.1 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from pyinstaller>=6.0.0->-r requirements.txt (line 15)) (0.2.3)
+Requirement already satisfied: pyinstaller-hooks-contrib>=2025.8 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from pyinstaller>=6.0.0->-r requirements.txt (line 15)) (2025.8)
+
+[notice] A new release of pip is available: 24.3.1 -> 25.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+✅ Dependencies installed successfully!
+🔨 Building standalone executable...
+373 INFO: PyInstaller: 6.15.0, contrib hooks: 2025.8
+374 INFO: Python: 3.13.2
+414 INFO: Platform: Windows-10-10.0.19045-SP0
+414 INFO: Python environment: C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\venv
+420 INFO: Removing temporary files and cleaning cache in C:\Users\ADMIN\AppData\Local\pyinstaller
+439 INFO: Module search paths (PYTHONPATH):
+['C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main',
+ 'C:\\Users\\ADMIN\\AppData\\Local\\Programs\\Python\\Python313\\python313.zip',
+ 'C:\\Users\\ADMIN\\AppData\\Local\\Programs\\Python\\Python313\\DLLs',
+ 'C:\\Users\\ADMIN\\AppData\\Local\\Programs\\Python\\Python313\\Lib',
+ 'C:\\Users\\ADMIN\\AppData\\Local\\Programs\\Python\\Python313',
+ 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv',
+ 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages',
+ 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\setuptools\\_vendor',
+ 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main']
+2136 INFO: Appending 'binaries' from .spec
+2137 INFO: Appending 'datas' from .spec
+2138 INFO: checking Analysis
+2138 INFO: Building Analysis because Analysis-00.toc is non existent
+2139 INFO: Running Analysis Analysis-00.toc
+2139 INFO: Target bytecode optimization level: 0
+2139 INFO: Initializing module dependency graph...
+2141 INFO: Initializing module graph hook caches...
+2286 INFO: Analyzing modules for base_library.zip ...
+4593 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+4886 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+10053 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+15980 INFO: Caching module dependency graph...
+16065 INFO: Looking for Python shared library...
+16077 INFO: Using Python shared library: C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\python313.dll
+16077 INFO: Analyzing C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\pydownloader.py
+16131 INFO: Processing standard module hook 'hook-customtkinter.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+16237 INFO: Processing pre-find-module-path hook 'hook-tkinter.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_find_module_path'
+16238 INFO: TclTkInfo: initializing cached Tcl/Tk info...
+16926 INFO: Processing standard module hook 'hook-_tkinter.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+17211 INFO: Processing standard module hook 'hook-platform.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+17293 INFO: Processing standard module hook 'hook-_ctypes.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+17470 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+17473 INFO: SetuptoolsInfo: initializing cached setuptools info...
+25235 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+25236 INFO: Setuptools: 'typing_extensions' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.typing_extensions'!
+25251 INFO: Processing standard module hook 'hook-setuptools.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+25288 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+25425 INFO: Processing standard module hook 'hook-sysconfig.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+25460 INFO: Processing pre-safe-import-module hook 'hook-jaraco.functools.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+25461 INFO: Setuptools: 'jaraco.functools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.functools'!
+25486 INFO: Processing pre-safe-import-module hook 'hook-more_itertools.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+25487 INFO: Setuptools: 'more_itertools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.more_itertools'!
+26287 INFO: Processing pre-safe-import-module hook 'hook-jaraco.text.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+26288 INFO: Setuptools: 'jaraco.text' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.text'!
+26322 INFO: Processing standard module hook 'hook-setuptools._vendor.jaraco.text.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+26330 INFO: Processing pre-safe-import-module hook 'hook-importlib_resources.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+26334 INFO: Processing pre-safe-import-module hook 'hook-jaraco.context.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+26336 INFO: Setuptools: 'jaraco.context' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.context'!
+27210 INFO: Processing pre-safe-import-module hook 'hook-backports.tarfile.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+27212 INFO: Setuptools: 'backports.tarfile' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.backports.tarfile'!
+27446 INFO: Processing standard module hook 'hook-backports.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+27627 INFO: Processing pre-safe-import-module hook 'hook-importlib_metadata.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+27629 INFO: Setuptools: 'importlib_metadata' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.importlib_metadata'!
+27689 INFO: Processing standard module hook 'hook-setuptools._vendor.importlib_metadata.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+27694 INFO: Processing pre-safe-import-module hook 'hook-zipp.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+27696 INFO: Setuptools: 'zipp' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.zipp'!
+28531 INFO: Processing pre-safe-import-module hook 'hook-tomli.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+28533 INFO: Setuptools: 'tomli' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.tomli'!
+29743 INFO: Processing pre-safe-import-module hook 'hook-wheel.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+29744 INFO: Setuptools: 'wheel' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.wheel'!
+30584 INFO: Processing standard module hook 'hook-PIL.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+30812 INFO: Processing standard module hook 'hook-PIL.Image.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+31599 INFO: Processing standard module hook 'hook-xml.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+31701 INFO: Processing standard module hook 'hook-xml.etree.cElementTree.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+32127 INFO: Processing standard module hook 'hook-PIL.ImageFilter.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+33389 INFO: Processing standard module hook 'hook-yt_dlp.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\yt_dlp\\__pyinstaller'
+323 WARNING: Failed to collect submodules for 'urllib3.contrib.emscripten' because importing 'urllib3.contrib.emscripten' raised: ModuleNotFoundError: No module named 'js'
+Adding imports: ['yt_dlp.compat._legacy', 'yt_dlp.compat._deprecated', 'yt_dlp.utils._legacy', 'yt_dlp.utils._deprecated', 'Cryptodome', 'requests', 'requests.__version__', 'requests._internal_utils', 'requests.adapters', 'requests.api', 'requests.auth', 'requests.certs', 'requests.compat', 'requests.cookies', 'requests.exceptions', 'requests.help', 'requests.hooks', 'requests.models', 'requests.packages', 'requests.sessions', 'requests.status_codes', 'requests.structures', 'requests.utils', 'urllib3', 'urllib3._base_connection', 'urllib3._collections', 'urllib3._request_methods', 'urllib3._version', 'urllib3.connection', 'urllib3.connectionpool', 'urllib3.contrib', 'urllib3.contrib.pyopenssl', 'urllib3.contrib.socks', 'urllib3.exceptions', 'urllib3.fields', 'urllib3.filepost', 'urllib3.http2', 'urllib3.http2.connection', 'urllib3.http2.probe', 'urllib3.poolmanager', 'urllib3.response', 'urllib3.util', 'urllib3.util.connection', 'urllib3.util.proxy', 'urllib3.util.request', 'urllib3.util.response', 'urllib3.util.retry', 
+'urllib3.util.ssl_', 'urllib3.util.ssl_match_hostname', 'urllib3.util.ssltransport', 'urllib3.util.timeout', 'urllib3.util.url', 'urllib3.util.util', 'urllib3.util.wait', 'mutagen', 'brotli', 'certifi', 'secretstorage', 'curl_cffi']
+35339 WARNING: collect_data_files - skipping data collection for module 'curl_cffi' as it is not a package.
+36581 INFO: Processing standard module hook 'hook-certifi.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+36611 INFO: Processing standard module hook 'hook-sqlite3.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+37187 INFO: Processing standard module hook 'hook-urllib3.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+38371 INFO: Processing standard module hook 'hook-charset_normalizer.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+39692 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+59972 INFO: Analyzing hidden import 'PIL._tkinter_finder'
+59975 INFO: Processing module hooks (post-graph stage)...
+60868 INFO: Processing standard module hook 'hook-PIL.SpiderImagePlugin.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+62641 INFO: Processing standard module hook 'hook-difflib.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+63363 INFO: Processing standard module hook 'hook-_tkinter.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+63404 INFO: Performing binary vs. data reclassification (948 entries)
+72878 INFO: Looking for ctypes DLLs
+72928 WARNING: Ignoring AppKit.framework/AppKit imported from C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\venv\Lib\site-packages\darkdetect\_mac_detect.py - only basenames are supported with ctypes imports!
+73180 INFO: Analyzing run-time hooks ...
+73191 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+73198 INFO: Including run-time hook 'pyi_rth_setuptools.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+73202 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+73209 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+73217 INFO: Including run-time hook 'pyi_rth__tkinter.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+73325 INFO: Creating base_library.zip...
+73423 INFO: Looking for dynamic libraries
+75134 INFO: Extra DLL search directories (AddDllDirectory): []
+75134 INFO: Extra DLL search directories (PATH): []
+76153 INFO: Warnings written to C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\build\pydownloader\warn-pydownloader.txt
+76449 INFO: Graph cross-reference written to C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\build\pydownloader\xref-pydownloader.html
+76592 INFO: checking PYZ
+76593 INFO: Building PYZ because PYZ-00.toc is non existent
+76594 INFO: Building PYZ (ZlibArchive) C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\build\pydownloader\PYZ-00.pyz       
+79243 INFO: Building PYZ (ZlibArchive) C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\build\pydownloader\PYZ-00.pyz completed successfully.
+79504 INFO: checking PKG
+79504 INFO: Building PKG because PKG-00.toc is non existent
+79505 INFO: Building PKG (CArchive) PyDownloader.pkg
+79620 INFO: Building PKG (CArchive) PyDownloader.pkg completed successfully.
+79622 INFO: Bootloader C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\venv\Lib\site-packages\PyInstaller\bootloader\Windows-64bit-intel\runw.exe
+79623 INFO: checking EXE
+79624 INFO: Building EXE because EXE-00.toc is non existent
+79624 INFO: Building EXE from EXE-00.toc
+79625 INFO: Copying bootloader EXE to C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\build\pydownloader\PyDownloader.exe  
+79898 INFO: Copying icon to EXE
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\venv\Lib\site-packages\PyInstaller\__main__.py", line 321, in <module>
+    run()
+    ~~~^^
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\venv\Lib\site-packages\PyInstaller\__main__.py", line 215, in run  
+    run_build(pyi_config, spec_file, **vars(args))
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\venv\Lib\site-packages\PyInstaller\__main__.py", line 70, in run_build
+    PyInstaller.building.build_main.main(pyi_config, spec_file, **kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\venv\Lib\site-packages\PyInstaller\building\build_main.py", line 1282, in main
+    build(specfile, distpath, workpath, clean_build)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\venv\Lib\site-packages\PyInstaller\building\build_main.py", line 1220, in build
+    exec(code, spec_namespace)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "pydownloader.spec", line 77, in <module>
+    exe = EXE(
+        pyz,
+    ...<13 lines>...
+        icon='assets/icon.ico',  # Add your icon file
+    )
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\venv\Lib\site-packages\PyInstaller\building\api.py", line 678, in __init__
+    self.__postinit__()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\venv\Lib\site-packages\PyInstaller\building\datastruct.py", line 184, in __postinit__
+    self.assemble()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\venv\Lib\site-packages\PyInstaller\building\api.py", line 791, in assemble
+    self._retry_operation(icon.CopyIcons, build_name, self.icon)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\venv\Lib\site-packages\PyInstaller\building\api.py", line 1061, in 
+_retry_operation
+    return func(*args)
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\venv\Lib\site-packages\PyInstaller\utils\win32\icon.py", line 206, 
+in CopyIcons
+    srcpath = normalize_icon_type(srcpath, ("exe", "ico"), "ico", config.CONF["workpath"])
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\venv\Lib\site-packages\PyInstaller\building\icon.py", line 34, in normalize_icon_type
+    raise FileNotFoundError(f"Icon input file {icon_path} not found")
+FileNotFoundError: Icon input file C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\assets/icon.ico not found
+❌ Build failed: Command '['C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Scripts\\python.exe', '-m', 'PyInsta
+ller', '--clean', 'pydownloader.spec']' returned non-zero exit status 1.
+Γ¥î Build script failed
+Press any key to continue . . .
+(venv) PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> .\\setup.bat
+
+====================================
+   PyDownloader Pro Setup
+====================================
+
+Γ£à Python found
+
+≡ƒôª Installing Python dependencies...
+Requirement already satisfied: customtkinter>=5.2.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 2)) (5.2.2)
+Requirement already satisfied: yt-dlp>=2024.7.25 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages 
+(from -r requirements.txt (line 3)) (2025.7.21)
+Requirement already satisfied: Pillow>=10.0.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 4)) (11.3.0)
+Requirement already satisfied: packaging>=23.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 5)) (25.0)
+Requirement already satisfied: requests>=2.31.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 8)) (2.32.4)
+Requirement already satisfied: urllib3>=2.0.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 9)) (2.5.0)
+Requirement already satisfied: certifi>=2023.7.22 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 10)) (2025.8.3)
+Requirement already satisfied: charset-normalizer>=3.2.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 11)) (3.4.3)
+Requirement already satisfied: idna>=3.4 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 12)) (3.10)
+Requirement already satisfied: pyinstaller>=6.0.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 15)) (6.15.0)
+Requirement already satisfied: darkdetect in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from customtkinter>=5.2.0->-r requirements.txt (line 2)) (0.8.0)
+Requirement already satisfied: setuptools>=42.0.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from pyinstaller>=6.0.0->-r requirements.txt (line 15)) (80.9.0)
+Requirement already satisfied: altgraph in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from pyinstaller>=6.0.0->-r requirements.txt (line 15)) (0.17.4)
+Requirement already satisfied: pefile!=2024.8.26,>=2022.5.30 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from pyinstaller>=6.0.0->-r requirements.txt (line 15)) (2023.2.7)
+Requirement already satisfied: pywin32-ctypes>=0.2.1 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from pyinstaller>=6.0.0->-r requirements.txt (line 15)) (0.2.3)
+Requirement already satisfied: pyinstaller-hooks-contrib>=2025.8 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from pyinstaller>=6.0.0->-r requirements.txt (line 15)) (2025.8)
+
+[notice] A new release of pip is available: 24.3.1 -> 25.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+Γ£à Dependencies installed
+
+≡ƒÜÇ Running build script...
+🚀 PyDownloader Build Script
+========================================
+🔧 Setting up assets folder...
+📥 Downloading FFmpeg for Windows...
+Downloading from: https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip
+Progress: 100.0%
+📦 Extracting FFmpeg...
+✅ FFmpeg installed: assets\ffmpeg.exe
+📥 Downloading aria2c for Windows...
+Downloading from: https://github.com/aria2/aria2/releases/download/release-1.37.0/aria2-1.37.0-win-64bit-build1.zip
+Progress: 100.0%
+📦 Extracting aria2c...
+✅ aria2c installed: assets\aria2c.exe
+✅ Successfully set up 2 binary/binaries!
+✅ Assets setup complete!
+📦 Installing Python dependencies...
+Requirement already satisfied: customtkinter>=5.2.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 2)) (5.2.2)
+Requirement already satisfied: yt-dlp>=2024.7.25 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages 
+(from -r requirements.txt (line 3)) (2025.7.21)
+Requirement already satisfied: Pillow>=10.0.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 4)) (11.3.0)
+Requirement already satisfied: packaging>=23.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 5)) (25.0)
+Requirement already satisfied: requests>=2.31.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 8)) (2.32.4)
+Requirement already satisfied: urllib3>=2.0.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 9)) (2.5.0)
+Requirement already satisfied: certifi>=2023.7.22 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 10)) (2025.8.3)
+Requirement already satisfied: charset-normalizer>=3.2.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 11)) (3.4.3)
+Requirement already satisfied: idna>=3.4 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 12)) (3.10)
+Requirement already satisfied: pyinstaller>=6.0.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from -r requirements.txt (line 15)) (6.15.0)
+Requirement already satisfied: darkdetect in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from customtkinter>=5.2.0->-r requirements.txt (line 2)) (0.8.0)
+Requirement already satisfied: setuptools>=42.0.0 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from pyinstaller>=6.0.0->-r requirements.txt (line 15)) (80.9.0)
+Requirement already satisfied: altgraph in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from pyinstaller>=6.0.0->-r requirements.txt (line 15)) (0.17.4)
+Requirement already satisfied: pefile!=2024.8.26,>=2022.5.30 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from pyinstaller>=6.0.0->-r requirements.txt (line 15)) (2023.2.7)
+Requirement already satisfied: pywin32-ctypes>=0.2.1 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from pyinstaller>=6.0.0->-r requirements.txt (line 15)) (0.2.3)
+Requirement already satisfied: pyinstaller-hooks-contrib>=2025.8 in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (from pyinstaller>=6.0.0->-r requirements.txt (line 15)) (2025.8)
+
+[notice] A new release of pip is available: 24.3.1 -> 25.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+✅ Dependencies installed successfully!
+🔨 Building standalone executable...
+347 INFO: PyInstaller: 6.15.0, contrib hooks: 2025.8
+348 INFO: Python: 3.13.2
+386 INFO: Platform: Windows-10-10.0.19045-SP0
+387 INFO: Python environment: C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\venv
+392 INFO: Removing temporary files and cleaning cache in C:\Users\ADMIN\AppData\Local\pyinstaller
+405 INFO: Module search paths (PYTHONPATH):
+['C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main',
+ 'C:\\Users\\ADMIN\\AppData\\Local\\Programs\\Python\\Python313\\python313.zip',
+ 'C:\\Users\\ADMIN\\AppData\\Local\\Programs\\Python\\Python313\\DLLs',
+ 'C:\\Users\\ADMIN\\AppData\\Local\\Programs\\Python\\Python313\\Lib',
+ 'C:\\Users\\ADMIN\\AppData\\Local\\Programs\\Python\\Python313',
+ 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv',
+ 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages',
+ 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\setuptools\\_vendor',
+ 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main']
+1906 INFO: Appending 'binaries' from .spec
+1906 INFO: Appending 'datas' from .spec
+1907 INFO: checking Analysis
+1908 INFO: Building Analysis because Analysis-00.toc is non existent
+1908 INFO: Running Analysis Analysis-00.toc
+1908 INFO: Target bytecode optimization level: 0
+1908 INFO: Initializing module dependency graph...
+1910 INFO: Initializing module graph hook caches...
+1938 INFO: Analyzing modules for base_library.zip ...
+4160 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+8205 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+10388 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+11545 INFO: Caching module dependency graph...
+11635 INFO: Looking for Python shared library...
+11646 INFO: Using Python shared library: C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\python313.dll
+11647 INFO: Analyzing C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\pydownloader.py
+11694 INFO: Processing standard module hook 'hook-customtkinter.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+11783 INFO: Processing pre-find-module-path hook 'hook-tkinter.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_find_module_path'
+11784 INFO: TclTkInfo: initializing cached Tcl/Tk info...
+12274 INFO: Processing standard module hook 'hook-_tkinter.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+12489 INFO: Processing standard module hook 'hook-platform.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+12553 INFO: Processing standard module hook 'hook-_ctypes.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+12642 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+12644 INFO: SetuptoolsInfo: initializing cached setuptools info...
+22735 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+22737 INFO: Setuptools: 'typing_extensions' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.typing_extensions'!
+22765 INFO: Processing standard module hook 'hook-setuptools.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+22807 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+22974 INFO: Processing standard module hook 'hook-sysconfig.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+23002 INFO: Processing pre-safe-import-module hook 'hook-jaraco.functools.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+23003 INFO: Setuptools: 'jaraco.functools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.functools'!      
+23041 INFO: Processing pre-safe-import-module hook 'hook-more_itertools.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+23043 INFO: Setuptools: 'more_itertools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.more_itertools'!
+24279 INFO: Processing pre-safe-import-module hook 'hook-jaraco.text.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+24288 INFO: Setuptools: 'jaraco.text' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.text'!
+24345 INFO: Processing standard module hook 'hook-setuptools._vendor.jaraco.text.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+24355 INFO: Processing pre-safe-import-module hook 'hook-importlib_resources.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+24359 INFO: Processing pre-safe-import-module hook 'hook-jaraco.context.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+24360 INFO: Setuptools: 'jaraco.context' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.context'!
+25530 INFO: Processing pre-safe-import-module hook 'hook-backports.tarfile.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+25532 INFO: Setuptools: 'backports.tarfile' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.backports.tarfile'!
+25900 INFO: Processing standard module hook 'hook-backports.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+26170 INFO: Processing pre-safe-import-module hook 'hook-importlib_metadata.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+26173 INFO: Setuptools: 'importlib_metadata' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.importlib_metadata'!
+26272 INFO: Processing standard module hook 'hook-setuptools._vendor.importlib_metadata.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+26276 INFO: Processing pre-safe-import-module hook 'hook-zipp.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+26278 INFO: Setuptools: 'zipp' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.zipp'!
+27511 INFO: Processing pre-safe-import-module hook 'hook-tomli.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+27514 INFO: Setuptools: 'tomli' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.tomli'!
+29250 INFO: Processing pre-safe-import-module hook 'hook-wheel.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+29252 INFO: Setuptools: 'wheel' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.wheel'!
+30411 INFO: Processing standard module hook 'hook-PIL.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+30792 INFO: Processing standard module hook 'hook-PIL.Image.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+31916 INFO: Processing standard module hook 'hook-xml.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+31993 INFO: Processing standard module hook 'hook-xml.etree.cElementTree.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+32646 INFO: Processing standard module hook 'hook-PIL.ImageFilter.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+34302 INFO: Processing standard module hook 'hook-yt_dlp.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\yt_dlp\\__pyinstaller'
+399 WARNING: Failed to collect submodules for 'urllib3.contrib.emscripten' because importing 'urllib3.contrib.emscripten' raised: ModuleNotFoundError: No module named 'js'
+Adding imports: ['yt_dlp.compat._legacy', 'yt_dlp.compat._deprecated', 'yt_dlp.utils._legacy', 'yt_dlp.utils._deprecated', 'Cryptodome', 'requests', 'requests.__version__', 'requests._internal_utils', 'requests.adapters', 'requests.api', 'requests.auth', 'requests.certs', 'requests.compat', 'requests.cookies', 'requests.exceptions', 'requests.help', 'requests.hooks', 'requests.models', 'requests.packages', 'requests.sessions', 'requests.status_codes', 'requests.structures', 'requests.utils', 'urllib3', 'urllib3._base_connection', 'urllib3._collections', 'urllib3._request_methods', 'urllib3._version', 'urllib3.connection', 'urllib3.connectionpool', 'urllib3.contrib', 'urllib3.contrib.pyopenssl', 'urllib3.contrib.socks', 'urllib3.exceptions', 'urllib3.fields', 'urllib3.filepost', 'urllib3.http2', 'urllib3.http2.connection', 'urllib3.http2.probe', 'urllib3.poolmanager', 'urllib3.response', 'urllib3.util', 'urllib3.util.connection', 'urllib3.util.proxy', 'urllib3.util.request', 'urllib3.util.response', 'urllib3.util.retry', 
+'urllib3.util.ssl_', 'urllib3.util.ssl_match_hostname', 'urllib3.util.ssltransport', 'urllib3.util.timeout', 'urllib3.util.url', 'urllib3.util.util', 'urllib3.util.wait', 'mutagen', 'brotli', 'certifi', 'secretstorage', 'curl_cffi']
+36768 WARNING: collect_data_files - skipping data collection for module 'curl_cffi' as it is not a package.
+38618 INFO: Processing standard module hook 'hook-certifi.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+38640 INFO: Processing standard module hook 'hook-sqlite3.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+39474 INFO: Processing standard module hook 'hook-urllib3.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+41500 INFO: Processing standard module hook 'hook-charset_normalizer.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+43484 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+77588 INFO: Analyzing hidden import 'PIL._tkinter_finder'
+77626 INFO: Processing module hooks (post-graph stage)...
+79618 INFO: Processing standard module hook 'hook-PIL.SpiderImagePlugin.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+82651 INFO: Processing standard module hook 'hook-difflib.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+83491 INFO: Processing standard module hook 'hook-_tkinter.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks'
+83550 INFO: Performing binary vs. data reclassification (949 entries)
+83785 INFO: Looking for ctypes DLLs
+83853 WARNING: Ignoring AppKit.framework/AppKit imported from C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\venv\Lib\site-packages\darkdetect\_mac_detect.py - only basenames are supported with ctypes imports!
+84344 INFO: Analyzing run-time hooks ...
+84397 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+84414 INFO: Including run-time hook 'pyi_rth_setuptools.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+84422 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+84436 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+84450 INFO: Including run-time hook 'pyi_rth__tkinter.py' from 'C:\\Users\\ADMIN\\Downloads\\Youtube-Downloader-main\\Youtube-Downloader-main\\venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+84666 INFO: Creating base_library.zip...
+84902 INFO: Looking for dynamic libraries
+88107 INFO: Extra DLL search directories (AddDllDirectory): []
+88108 INFO: Extra DLL search directories (PATH): []
+90777 INFO: Warnings written to C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\build\pydownloader\warn-pydownloader.txt
+91486 INFO: Graph cross-reference written to C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\build\pydownloader\xref-pydownloader.html
+91844 INFO: checking PYZ
+91844 INFO: Building PYZ because PYZ-00.toc is non existent
+91844 INFO: Building PYZ (ZlibArchive) C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\build\pydownloader\PYZ-00.pyz       
+96609 INFO: Building PYZ (ZlibArchive) C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\build\pydownloader\PYZ-00.pyz completed successfully.
+96847 INFO: checking PKG
+96848 INFO: Building PKG because PKG-00.toc is non existent
+96849 INFO: Building PKG (CArchive) PyDownloader.pkg
+96971 INFO: Building PKG (CArchive) PyDownloader.pkg completed successfully.
+96977 INFO: Bootloader C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\venv\Lib\site-packages\PyInstaller\bootloader\Windows-64bit-intel\runw.exe
+96979 INFO: checking EXE
+96979 INFO: Building EXE because EXE-00.toc is non existent
+96980 INFO: Building EXE from EXE-00.toc
+96981 INFO: Copying bootloader EXE to C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\build\pydownloader\PyDownloader.exe  
+97124 INFO: Copying icon to EXE
+97246 INFO: Copying 0 resources to EXE
+97247 INFO: Embedding manifest in EXE
+97362 INFO: Appending PKG archive to EXE
+97576 INFO: Fixing EXE headers
+98624 INFO: Building EXE from EXE-00.toc completed successfully.
+98682 INFO: checking COLLECT
+98683 INFO: Building COLLECT because COLLECT-00.toc is non existent
+98684 INFO: Building COLLECT COLLECT-00.toc
+104549 INFO: Building COLLECT COLLECT-00.toc completed successfully.
+104718 INFO: Build complete! The results are available in: C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\dist
+✅ Build completed successfully!
+📁 Executable can be found in the 'dist' folder
+
+🎉 Build process completed!
+Your standalone executable is ready in the 'dist/PyDownloader' folder
+
+≡ƒÄë Setup completed successfully!
+Your executable is in the 'dist\PyDownloader' folder
+✅ Build completed successfully!
+📁 Executable can be found in the 'dist' folder
+
+🎉 Build process completed!
+Your standalone executable is ready in the 'dist/PyDownloader' folder
+
+≡ƒÄë Setup completed successfully!
+Your executable is in the 'dist\PyDownloader' folder
+📁 Executable can be found in the 'dist' folder
+
+🎉 Build process completed!
+Your standalone executable is ready in the 'dist/PyDownloader' folder
+
+≡ƒÄë Setup completed successfully!
+Your executable is in the 'dist\PyDownloader' folder
+
+🎉 Build process completed!
+Your standalone executable is ready in the 'dist/PyDownloader' folder
+
+≡ƒÄë Setup completed successfully!
+Your executable is in the 'dist\PyDownloader' folder
+🎉 Build process completed!
+Your standalone executable is ready in the 'dist/PyDownloader' folder
+
+≡ƒÄë Setup completed successfully!
+Your executable is in the 'dist\PyDownloader' folder
+Your standalone executable is ready in the 'dist/PyDownloader' folder
+
+≡ƒÄë Setup completed successfully!
+Your executable is in the 'dist\PyDownloader' folder
+≡ƒÄë Setup completed successfully!
+Your executable is in the 'dist\PyDownloader' folder
+Your executable is in the 'dist\PyDownloader' folder
+
+Press any key to continue . . .
+Terminate batch job (Y/N)? 
+^C     
+(venv) PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> python pydownloader.py
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2068, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 862, in callit
+    func(*args)
+    ~~~~^^^^^^^
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\pydownloader.py", line 246, in update_ui_with_info
+    if not audio_formats or f.get('abr', 0) > audio_formats[0].get('abr', 0):
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'NoneType' and 'NoneType'
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\pydownloader.py", line 437, in <module>
+    app = App()
+in mainloop
+    super().mainloop(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 1599, in mainloop
+    self.tk.mainloop(n)
+    ~~~~~~~~~~~~~~~~^^^
+KeyboardInterrupt
+(venv) PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> python pydownloader.py
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2068, in __call__
+    return self.func(*args)
+           ~~~~~~~~~^^^^^^^
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\venv\Lib\site-packages\customtkinter\windows\widgets\ctk_button.py", line 554, in _clicked
+    self._command()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\pydownloader.py", line 192, in get_video_info_thread
+    thread = threading.Thread(target=self.fetch_and_display_info, args=(url,))
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2546, in __getattr__
+    return getattr(self.tk, attr)
+AttributeError: '_tkinter.tkapp' object has no attribute 'fetch_and_display_info'
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\pydownloader.py", line 438, in <module>
+in mainloop
+    super().mainloop(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 1599, in mainloop
+    self.tk.mainloop(n)
+    ~~~~~~~~~~~~~~~~^^^
+KeyboardInterrupt
+(venv) PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> python pydownloader.py
+[download] Got error: HTTP Error 403: Forbidden 
+[download] Got error: HTTP Error 403: Forbidden 
+[download] Got error: HTTP Error 403: Forbidden 
+[download] Got error: HTTP Error 403: Forbidden 
+ERROR: [youtube] yJJKEOdkiE0: Requested format is not available. Use --list-formats for a list of available formats 
+--- Full yt-dlp Error ---
+ERROR: [youtube] yJJKEOdkiE0: Requested format is not available. Use --list-formats for a list of available formats
+-------------------------
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\pydownloader.py", line 400, in <module>
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\venv\Lib\site-packages\customtkinter\windows\ctk_tk.py", line 165, 
+in mainloop
+    super().mainloop(*args, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 1599, in mainloop
+    self.tk.mainloop(n)
+    ~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2063, in __call__
+    def __call__(self, *args):
+
+KeyboardInterrupt
+(venv) PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> python pydownloader.py
+[download] Got error: HTTP Error 403: Forbidden 
+ERROR: [youtube] 9F30oSlv9ps: Requested format is not available. Use --list-formats for a list of available formats 
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\pydownloader.py", line 558, in <module>
+    app.mainloop()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\venv\Lib\site-packages\customtkinter\windows\ctk_tk.py", line 165, 
+in mainloop
+    super().mainloop(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 1599, in mainloop
+    self.tk.mainloop(n)
+    ~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2063, in __call__
+
+KeyboardInterrupt
+(venv) PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> pip install --upgrade yt-dlp
+Requirement already satisfied: yt-dlp in c:\users\admin\downloads\youtube-downloader-main\youtube-downloader-main\venv\lib\site-packages (2025.7.21)
+
+[notice] To update, run: python.exe -m pip install --upgrade pip
+[download] Got error: HTTP Error 403: Forbidden
+ERROR: [youtube] 9F30oSlv9ps: Requested format is not available. Use --list-formats for a list of available formats
+--- Full yt-dlp Error ---
+ERROR: [youtube] 9F30oSlv9ps: Requested format is not available. Use --list-formats for a list of available formats
+(venv) PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> yt-dlp --rm-cache-dir
+Removing cache dir C:\Users\ADMIN/.cache\yt-dlp ...
+(venv) PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> pip install --upgrade yt-dlp
+
+[notice] A new release of pip is available: 24.3.1 -> 25.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+(venv) PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> yt-dlp -U
+Latest version: stable@2025.07.21 from yt-dlp/yt-dlp
+yt-dlp is up to date (stable@2025.07.21 from yt-dlp/yt-dlp)
+(venv) PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe -o yt-dlp.exe
+Invoke-WebRequest : A parameter cannot be found that matches parameter name 'L'.
++ curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt- ...
++      ~~
+    + CategoryInfo          : InvalidArgument: (:) [Invoke-WebRequest], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.InvokeWebRequestCommand
+ 
+(venv) PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> python pydownloader.py
+✅ Using cookies.txt for authentication
+(venv) PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> python pydownloader.py
+✅ Using cookies.txt for authentication
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\pydownloader.py", line 648, in <module>
+    app.mainloop()
+    ~~~~~~~~~~~~^^
+in mainloop
+    super().mainloop(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 1599, in mainloop
+    self.tk.mainloop(n)
+    ~~~~~~~~~~~~~~~~^^^
+KeyboardInterrupt
+(venv) PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> python pydownloader.py
+✅ Using cookies.txt for authentication
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\pydownloader.py", line 648, in <module>
+in mainloop
+    super().mainloop(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 1599, in mainloop
+    self.tk.mainloop(n)
+    ~~~~~~~~~~~~~~~~^^^
+KeyboardInterrupt
+(venv) PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> python pydownloader.py
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\pydownloader.py", line 281, in <module>
+    if self.is_closing:
+    ^^^^^^^^^^
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\venv\Lib\site-packages\customtkinter\windows\ctk_tk.py", line 165, 
+in mainloop
+    super().mainloop(*args, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 1599, in mainloop
+    ~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2063, in __call__
+    def __call__(self, *args):
+
+KeyboardInterrupt
+✅ Using cookies.txt for authentication
+(venv) PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> python pydownloader.py
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\pydownloader.py", line 362, in <module>
+    multiprocessing.freeze_support()
+    ^^^^^^^^^^^^^^^
+NameError: name 'multiprocessing' is not defined. Did you forget to import 'multiprocessing'?
+(venv) PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> python pydownloader.py
+✅ Aria2c downloader enabled.
+[download] Got error: HTTP Error 403: Forbidden
+ERROR: [youtube] 9F30oSlv9ps: Requested format is not available. Use --list-formats for a list of available formats
+--- Full yt-dlp Error ---
+ERROR: [youtube] 9F30oSlv9ps: Requested format is not available. Use --list-formats for a list of available formats
+-------------------------
+(venv) PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> python pydownloader.py
+✅ Using cookies.txt for authentication
+(venv) PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> python pydownloader.py
+✅ Using cookies.txt for authentication
+WARNING: [youtube] Skipping client "android" since it does not support cookies 
+WARNING: [youtube] Skipping client "ios" since it does not support cookies 
+WARNING: [youtube] 9F30oSlv9ps: Some web client https formats have been skipped as they are missing a url. YouTube is forcing SABR streaming for this client. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
+Total formats available: 5
+Found 360p (Low): 18 - mp4
+Available resolutions: ['360p']
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\pydownloader.py", line 714, in <module>
+in mainloop
+    super().mainloop(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 1599, in mainloop
+    self.tk.mainloop(n)
+KeyboardInterrupt
+(venv) PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> python pydownloader.py
+[Cookies] Loading cookie      0/    68ERROR: Failed to decrypt with DPAPI. See  https://github.com/yt-dlp/yt-dlp/issues/10927  for more info        
+ERROR: ERROR: Failed to decrypt with DPAPI. See  https://github.com/yt-dlp/yt-dlp/issues/10927  for more info
+--- Full yt-dlp Error ---
+ERROR: ERROR: Failed to decrypt with DPAPI. See  https://github.com/yt-dlp/yt-dlp/issues/10927  for more info
+-------------------------
+(venv) PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> python pydownloader.py
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\pydownloader.py", line 281, in <module>
+    for widget in self.options_frame.winfo_children():
+    ^^^^^^^^^^
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\venv\Lib\site-packages\customtkinter\windows\ctk_tk.py", line 165, 
+in mainloop
+    super().mainloop(*args, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 1599, in mainloop
+    self.tk.mainloop(n)
+    ~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2063, in __call__
+    def __call__(self, *args):
+
+KeyboardInterrupt
+(venv) PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> python pydownloader.py
+✅ Using cookies from Firefox
+WARNING: [youtube] 9F30oSlv9ps: Some web client https formats have been skipped as they are missing a url. YouTube is forcing SABR streaming for this client. See  https://github.com/yt-dlp/yt-dlp/issues/12482  for more details
+Total formats available: 5
+Found 360p (Low): 18 - mp4
+Available resolutions: ['360p']
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\pydownloader.py", line 654, in <module>
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\venv\Lib\site-packages\customtkinter\windows\ctk_tk.py", line 165, 
+in mainloop
+    super().mainloop(*args, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 1599, in mainloop
+    self.tk.mainloop(n)
+    ~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2063, in __call__
+    def __call__(self, *args):
+
+KeyboardInterrupt
+(venv) PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> python pydownloader.py
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\pydownloader.py", line 281, in <module>
+    self.percentage_label.configure(text="")
+    ^^^^^^^^^^
+  File "C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\venv\Lib\site-packages\customtkinter\windows\ctk_tk.py", line 165, 
+in mainloop
+    super().mainloop(*args, **kwargs)
+  File "C:\Users\ADMIN\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 1599, in mainloop
+    self.tk.mainloop(n)
+    ~~~~~~~~~~~~~~~~^^^
+    def __call__(self, *args):
+
+KeyboardInterrupt
+(venv) PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> python pydownloader.py
+✅ Found and using cookies from: C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main\cookies.txt
+[download]  38.1% of  105.90MiB at    6.27MiB/s ETA 00:10
+(venv) PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> your_command | Out-File output.txt
+>> 
+your_command : The term 'your_command' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling 
+of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ your_command | Out-File output.txt
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (your_command:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+(venv) PS C:\Users\ADMIN\Downloads\Youtube-Downloader-main\Youtube-Downloader-main> 
