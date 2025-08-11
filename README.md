@@ -100,7 +100,7 @@ If you got any error or frustrated use this gdrive link for direct exe download 
 
 https://drive.google.com/file/d/1WNIgFkGhNDrDrLURc3ACsI2sC-puLgtU/view?usp=sharing   (V-7.0)
 
-https://drive.google.com/file/d/1xcWvfxBWCQtYXYStaSI_xit2-wjnb6uy/view?usp=drive_link  (V-7.1)
+
 
 1. Download and extract the "pydownloader.zip"  
 2. Inside There will be a Pydownloader.exe  
@@ -202,5 +202,6 @@ This project is for educational purposes. Respect YouTube's Terms of Service and
 **Developed with ❤️ by Zane**
 
 *For the latest updates and support, visit the GitHub repository.*
+
 
 
